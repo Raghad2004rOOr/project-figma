@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="font-cairo overflow-x-hidden"> <!-- تم إضافة منع التمرير الأفقي هنا كحماية إضافية -->
+<body class="font-cairo overflow-x-hidden">
     <header class="max-w-7xl px-4 mx-auto h-18 shadow-[0px_1px_2px_0px_#0000000D] backdrop-blur-md top-0">
         <nav class="flex justify-between items-center py-3.5">
             <div class="flex items-center gap-3">
@@ -32,10 +32,9 @@
     </header>
 
     <main>
-        <!-- تعديل: جعل الفليكس عمودي على الجوال وأفقي على الشاشات الكبيرة -->
         <section class="pt-[77.94px] bg-bg overflow-hidden">
             <div class="flex flex-col md:flex-row items-center gap-16 max-w-7xl px-4 mx-auto">
-                <div class="w-full md:w-146"> <!-- تعديل: العرض كامل على الجوال و 146 على الـ md -->
+                <div class="w-full md:w-146"> 
                     <div class="inline-flex items-center gap-[7.99px] border rounded-[9999px] border-[#0D4B8E0D] bg-[#0D4B8E0D] mb-[23.1px] py-1.5 px-4">
                         <img src="images/Icon.svg" alt="">
                         <h5 class="text-sm text-primary font-bold">بوابة العطاء الموثوقة</h5>
@@ -50,12 +49,11 @@
                     </div>
                 </div>
                 <div class="w-full md:w-auto flex justify-center">
-                    <img src="images/Container--.svg" class="max-w-full h-auto md:w-[591.5px]" alt=""> <!-- تعديل: max-w-full لمنع خروج الصورة عن الشاشة -->
+                    <img src="images/Container--.svg" class="max-w-full h-auto md:w-[591.5px]" alt=""> <!-- max-w-full لمنع خروج الصورة عن الشاشة -->
                 </div>
             </div>
         </section>
 
-        <!-- تعديل: تقليل الـ padding والـ margin على الجوال -->
         <section class="my-12 px-4">
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-around bg-primary py-10 px-6 md:px-[84.39px] rounded-3xl text-white relative shadow-[0px_25px_50px_-12px_#0D4B8E4D] overflow-hidden">
                 <div class="mb-5 md:mb-0 text-center">
@@ -72,7 +70,7 @@
                     <h3 class="font-extrabold text-[36px] md:text-[48px]">+10</h3>
                     <p class="text-xs">دول حول العالم</p>
                 </div>
-                <div class="w-32 h-32 bg-white rounded-[50%] absolute -right-10 -bottom-10 opacity-5 overflow-hidden hidden md:block"></div>
+                <div class="w-32 h-32 bg-white rounded-[50%] absolute mb-25.5 right-22  opacity-5 overflow-hidden hidden md:block"></div>
             </div>
         </section>
 
@@ -81,7 +79,7 @@
                 <h3 class="text-primary font-bold text-[24px] pb-4">لماذا تختار منصة كفيلي؟</h3>
                 <p class="text-text text-[16px] font-normal pb-10 md:pb-16">نحن نؤمن بأن الصدقة أمانة، لذلك صممنا نظامنا ليكون الأكثر شفافية وأماناً في العالم العربي.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"> <!-- تعديل: تحويل لـ grid لتفادي المشاكل -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"> 
                 <div class="border border-[#C2C6D2] bg-white p-6 md:p-10 rounded-2xl transform transition-all duration-150 hover:-translate-y-2">
                     <img src="images/Container-img.svg" class="mx-auto bg-bg rounded-2xl p-4 w-16 h-16" alt="">
                     <p class="py-4 text-secondary font-semibold text-[20px]">الأمان والخصوصية</p>
@@ -168,7 +166,6 @@
             </div>
         </section>
 
-        <!-- تعديل: إزالة الـ mr-45 واستخدام mx-auto لتوسيط الدوائر بشكل سليم -->
         <section class="max-w-7xl px-4 mx-auto mt-25 mb-28.75">
             <h3 class="font-bold text-primary text-[24px] mb-16 text-center">رحلة الكفالة في 3 خطوات</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -198,7 +195,6 @@
             </div>
         </section>
 
-        <!-- تعديل: تحسين الهوامش والأزرار لتناسب شاشات الموبايل الضيقة -->
         <section class="max-w-7xl px-4 mx-auto bg-primary py-16 md:py-24.5 text-center">
             <img class="mb-8 mx-auto" src="images/Icon (1).svg" alt="">
             <p class="font-extrabold text-[20px] md:text-[38px] text-white px-4 md:px-48 leading-relaxed">"أنت لا تقدم فقط مالاً، بل تبني إنساناً وتعيد له إيمانه بالمستقبل. انضم إلى عائلة كفيلي اليوم."</p>
@@ -209,7 +205,6 @@
         </section>
     </main>
 
-    <!-- تعديل: تحويل الـ footer لـ Grid مرن يتكيف تلقائياً -->
     <footer class="max-w-7xl px-4 mx-auto bg-[#F3F4F5] mt-12">
         <div class="pt-16 pb-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             <div>
