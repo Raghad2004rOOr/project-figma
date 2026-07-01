@@ -27,7 +27,37 @@
                 <li class="text-text hover:text-primary hover:border-b-2 border-primary"><a href="">اتصل بنا</a></li>
             </ul>
 
-            <a href="" class="w-30.25 h-11 bg-primary text-white py-2.5 px-6 md:px-8 rounded-lg font-bold shadow-[0px_10px_15px_-3px_#0D4B8E33] hover:bg-white hover:text-primary hover:border-2 border-primary hover:text-[14px]">تبرع الآن</a>
+            <a href="" class="hidden md:block w-30.25 h-11 bg-primary text-white py-2.5 px-6 md:px-8 rounded-lg font-bold shadow-[0px_10px_15px_-3px_#0D4B8E33] hover:bg-white hover:text-primary hover:border-2 border-primary hover:text-[14px]">تبرع الآن</a>
+
+            <div id="mobile-menu" class="hidden md:hidden absolute top-18.25 left-0 w-full bg-white border-t border-gray-100 shadow-xl z-10 transition-all duration-300 ease-in-out">
+                <div class="px-6 pt-4 pb-6 space-y-3 flex flex-col text-right">
+                    <a href="#" class="bg-blue-50 text-primary font-medium px-4 py-3 rounded-xl">الرئيسية</a>
+                    <a href="#"
+                        class="text-gray-600 hover:bg-gray-50 hover:text-primary font-medium px-4 py-3 rounded-xl transition-all">من
+                        نحن</a>
+                    <a href="#"
+                        class="text-gray-600 hover:bg-gray-50 hover:text-primary font-medium px-4 py-3 rounded-xl transition-all">الأيتام</a>
+                    <a href="#"
+                        class="text-gray-600 hover:bg-gray-50 hover:text-primaryfont-medium px-4 py-3 rounded-xl transition-all">كيفية
+                        العمل</a>
+                    <a href="#"
+                        class="text-gray-600 hover:bg-gray-50 hover:text-primary font-medium px-4 py-3 rounded-xl transition-all">اتصل
+                        بنا</a>
+                    <hr class="border-gray-100 my-2">
+                    <a href="#"
+                        class="text-center
+                        bg-primary text-white py-2.5 px-6 md:px-8 rounded-lg font-bold shadow-[0px_10px_15px_-3px_#0D4B8E33] hover:bg-white hover:text-primary hover:border-2 border-primary hover:text-[14px]">
+                        تبرع الآن
+                    </a>
+                </div>
+            </div>
+            <button id="menu-btn" class="md:hidden text-text hover:text-primary focus:outline-none z-20 p-2 rounded-lg hover:bg-gray-100 transition-all">
+                <svg id="menu-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </nav>
     </header>
 
