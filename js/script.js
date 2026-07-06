@@ -36,6 +36,8 @@ window.addEventListener('load', function () {
         });
     }
 
+    
+
     function imageLoaded() {
         loadedImagesCount++;
         // عندما يتساوى عدد الصور المحملة مع العدد الإجمالي تختفي الشاشة
