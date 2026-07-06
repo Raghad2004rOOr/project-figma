@@ -6,3 +6,11 @@ menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 
 });
+
+window.addEventListener('load', function () {
+    const loadingScreen = document.getElementById('loading-screen');
+    loadingScreen.classList.add('opacity-0');
+    setTimeout(() => {
+        loadingScreen.style.display = 'none';
+    }, 500);
+});

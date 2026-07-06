@@ -12,6 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="font-cairo overflow-x-hidden">
+    <!-- شاشة التحميل الكاملة -->
+    <div id="loading-screen" class="fixed inset-0 bg-white flex flex-col items-center justify-center z-50 transition-opacity duration-500">
+        <!-- لوقو المنصة مع حركة نبض خفيفة -->
+        <img src="images/Kafeeli.svg" class="w-32 h-32 animate-pulse mb-4" alt="كفيلي">
+        <!-- سبينر التحميل باستخدام تايلوند -->
+        <div class="w-8 h-8 border-4 border-[#0052CC] border-t-transparent rounded-full animate-spin"></div>
+    </div>
     <header class="max-w-7xl px-4 mx-auto h-18 shadow-[0px_1px_2px_0px_#0000000D] backdrop-blur-md top-0">
         <nav class="flex justify-between items-center py-3.5">
             <div class="flex items-center gap-3">
@@ -236,11 +243,12 @@
     </main>
 
     <footer class="max-w-7xl px-4 mx-auto bg-[#F3F4F5] mt-12">
-        <div class="pt-16 pb-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-            <div>
-                <img src="images/Kafeeli.svg" class="mb-6" alt="">
+        <div class="pt-16 pb-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 text-center sm:text-right">
+            <div class="flex flex-col items-center sm:items-start">
+                <img src="images/Kafeeli.svg" class="mb-6 mx-auto sm:mx-0" alt="كفيلي">
                 <p class="text-text leading-relaxed">منصة "كفيلي" هي جسر الثقة الذي يجمع بين قلوب المحسنين وحاجات الأيتام، نسعى لتمكين الجيل القادم بحب وكرامة.</p>
             </div>
+
             <div>
                 <p class="text-primary pb-4 font-bold">المنصة</p>
                 <ul class="text-text space-y-3">
@@ -250,24 +258,26 @@
                     <li class="hover:text-primary transform transition-all duration-150 hover:-translate-y-0.5"><a href="">اتصل بنا</a></li>
                 </ul>
             </div>
+
             <div>
                 <p class="text-primary pb-4 font-bold">تواصل مباشر</p>
                 <ul class="text-text space-y-4">
-                    <li class="flex gap-3 items-center">
+                    <li class="flex gap-3 items-center justify-center sm:justify-start">
                         <img src="images/Icon0.svg" alt="">
                         <p>الرياض، المملكة العربية السعودية</p>
                     </li>
-                    <li class="flex gap-3 items-center">
+                    <li class="flex gap-3 items-center justify-center sm:justify-start">
                         <img src="images/Icon (2).svg" alt="">
                         <p dir="ltr">+966 500 000 000</p>
                     </li>
-                    <li class="flex gap-3 items-center">
+                    <li class="flex gap-3 items-center justify-center sm:justify-start">
                         <img src="images/Icon (3).svg" alt="">
                         <p>contact@kafeeli.org</p>
                     </li>
                 </ul>
             </div>
         </div>
+        
         <p class="text-text text-center pt-8 pb-7.25 border-t border-[#C2C6D24D]">© 2026 كفيلي - منصة رعاية الأيتام . جميع الحقوق محفوظة</p>
     </footer>
     <script src="js/script.js"></script>
